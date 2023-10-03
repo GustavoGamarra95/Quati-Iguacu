@@ -172,6 +172,7 @@ footer {
 
 .social-media ul li {
     margin-right: 20px;
+
 }
 
 .social-media ul li a {
@@ -182,4 +183,25 @@ footer {
 
 .social-media ul li a:hover {
     color: #F6615D;
+}
+
+.fbIcon { /*Icone do Facebook*/ 
+
+    height: 30px;
+    width: 30px;
+    
+}
+
+.instaIcon { /*Icone do Instagram*/
+
+    height: 30px;
+    width: 30px;
+
+}
+
+.xIcon { /*Icone do Twitter*/
+
+    height: 30px;
+    width: 30px;
+
 }
