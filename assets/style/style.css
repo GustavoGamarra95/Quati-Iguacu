@@ -72,10 +72,22 @@ header {
 
 /* Estilos para la sección de descripción */
 .container_description {
-    padding-top: 250px;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F6615D;
+}
+.btnbeta{
+    height: 3rem;
+    width: 10rem;
+    border-radius: 2rem;
+}
+.text{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .cover {
@@ -89,10 +101,11 @@ header {
 
 .slider-image {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%; /* O un valor específico en píxeles */
+    width: 100%;
     height: auto;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 .PersonageImage{
