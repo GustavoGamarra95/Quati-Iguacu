@@ -7,6 +7,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   height: 100%;
   width: 100%;
+  background-color: #708868;
 }
 
 /* Estilos para el encabezado */
@@ -14,7 +15,7 @@ header {
   width: 100%;
   height: 80px;
 
-  background-color: #333;
+  background-color: #913921;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -58,14 +59,23 @@ header {
 .menu ul li a {
   text-decoration: none;
   font-size: 16px;
-  color: #fff;
+  color: #fca814;
   text-transform: uppercase;
   transition: color 0.3s;
+  margin: 5px;
+  padding: 5px;
 }
 
 .menu ul li a:hover {
+<<<<<<< Updated upstream
   color: #f6615d;
 }
+=======
+  color: white;
+  transition: .5s;
+  font-size: larger;
+} 
+>>>>>>> Stashed changes
 
 /* Estilos para la sección de descripción */
 .slide {
@@ -103,6 +113,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+<<<<<<< Updated upstream
 
 }
 
@@ -110,6 +121,8 @@ header {
   height: 3rem;
   width: 10rem;
   border-radius: 2rem;
+=======
+>>>>>>> Stashed changes
 }
 
 .text {
@@ -117,8 +130,28 @@ header {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+} 
+#titTriplice {
+  color: white;
+  font-size: 170%;
+}
+.btnbeta {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 2rem;
+  background-color: #7a121b;
+  margin-top: 10px;
+  box-shadow: 3px 4px #414827;
+}.btnbeta:hover {
+  height: 3.5rem;
+  width: 13rem;
+  transition: .5s;
 }
 
+#participeBeta {
+  color: #fca814;
+  font-size: 120%;
+}
 .cover {
   padding: 100px;
   text-align: center;
@@ -151,8 +184,13 @@ header {
 /* Estilos para el pie de página */
 footer {
   width: 100%;
+<<<<<<< Updated upstream
   height: auto;
   background-color: #333;
+=======
+  height: 70px;
+  background-color: #708868;
+>>>>>>> Stashed changes
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
@@ -167,7 +205,7 @@ footer {
 }
 
 .footer-text h1 {
-  color: #fff;
+  color: #fca814;
 }
 
 .menu-text-footer {
@@ -185,13 +223,15 @@ footer {
 
 .menu-text-footer ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #fca814;
   transition: color 0.3s;
 }
 
 .menu-text-footer ul li a:hover {
-  color: #f6615d;
-}
+  color: white;
+  transition: .5s;
+  font-size: 110%;
+} 
 
 .social-media {
   display: flex;
@@ -209,20 +249,25 @@ footer {
   margin-right: 20px;
 }
 
-.social-media ul li a {
+/*.social-media ul li a {
   text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
+  color: #fca814;
 }
 
 .social-media ul li a:hover {
-  color: #f6615d;
-}
+  color: white;
+  transition: .5s;
+  font-size: small;
+} */
 
 .socialIcon {
   /*Icone do Facebook*/
+  height: 20px;
+  align-items: center;
+  margin: 3px;
+} .socialIcon:hover {
+  transition: .5s;
   height: 30px;
-  width: 30px;
 }
 
 /* Botão do idioma */
@@ -237,7 +282,10 @@ footer {
 
 .IdiomaImagem {
   border-radius: 100px;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
 
 nav .drop-down {
@@ -258,8 +306,13 @@ nav .drop-down {
 }
 
 nav .drop-down li {
+<<<<<<< Updated upstream
   background-color: #333333a4;
 }
+=======
+    background-color: #708868a4;
+  }
+>>>>>>> Stashed changes
 
 nav .drop-down.closed {
   /* Quando alternado via jQuery, essa classe reduzirá a altura do ul que, em conjunto
@@ -278,8 +331,15 @@ nav .drop-down li a {
   padding: 10px; /* Larger touch target area */
 }
 
+<<<<<<< Updated upstream
 .footer-logo img{ /*alterando o tamanho do logo do footer*/
   width: 60px;
   height: 60px;
 }
 >>>>>>> 5c76e1495a5e170182696042e9ab1b4447197346
+=======
+#frase1 { 
+  font-size:  200% ;
+  color: #fca814;
+}
+>>>>>>> Stashed changes
