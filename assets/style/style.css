@@ -151,11 +151,10 @@ header {
 /* Estilos para el pie de página */
 footer {
   width: 100%;
-  height: 70px;
+  height: auto;
   background-color: #333;
   padding-top: 5px;
   padding-bottom: 5px;
-  bottom: 0;
   text-align: center;
 }
 
@@ -163,6 +162,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0;
   padding: 0 20px;
 }
 
@@ -270,6 +270,16 @@ nav .drop-down.closed {
 
 nav .drop-down li a {
   display: block;
+<<<<<<< HEAD
   padding: 10px;
   /* Larger touch target area */
 }
+=======
+  padding: 10px; /* Larger touch target area */
+}
+
+.footer-logo img{ /*alterando o tamanho do logo do footer*/
+  width: 60px;
+  height: 60px;
+}
+>>>>>>> 5c76e1495a5e170182696042e9ab1b4447197346
