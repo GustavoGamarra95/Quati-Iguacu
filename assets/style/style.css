@@ -237,15 +237,13 @@ footer {
 
 .IdiomaImagem {
   border-radius: 100px;
-
 }
 
 nav .drop-down {
+  z-index: 1000; /* Aumente este valor conforme necessário */
   list-style: none;
   overflow: hidden;
-  /* Quando a altura do ul é reduzida, garante que os li que excedem não sejam mostrados */
   height: 130px;
-  /* 172px = (38 (li) + 5 (li border)) * 4 (número de li) */
   background-color: #00000000;
   font-family: Arial;
   margin: 0 auto;
@@ -256,6 +254,7 @@ nav .drop-down {
   position: absolute;
   border-radius: 100px;
 }
+
 
 nav .drop-down li {
   background-color: #333333a4;
@@ -270,16 +269,7 @@ nav .drop-down.closed {
 
 nav .drop-down li a {
   display: block;
-<<<<<<< HEAD
   padding: 10px;
   /* Larger touch target area */
 }
-=======
-  padding: 10px; /* Larger touch target area */
-}
-
-.footer-logo img{ /*alterando o tamanho do logo do footer*/
-  width: 60px;
-  height: 60px;
-}
->>>>>>> 5c76e1495a5e170182696042e9ab1b4447197346
+/* O botão do idioma termina aqui */
