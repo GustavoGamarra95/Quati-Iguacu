@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-}
+} html { background-color: #708868;}
 
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -14,7 +14,6 @@ body {
 header {
   width: 100%;
   height: 80px;
-
   background-color: #913921;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -53,7 +52,7 @@ header {
 }
 
 .menu ul li {
-  margin-left: 20px;
+
 }
 
 .menu ul li a {
@@ -63,19 +62,14 @@ header {
   text-transform: uppercase;
   transition: color 0.3s;
   margin: 5px;
+  transition: .5s;
   padding: 5px;
 }
 
 .menu ul li a:hover {
-<<<<<<< Updated upstream
-  color: #f6615d;
-}
-=======
   color: white;
-  transition: .5s;
   font-size: larger;
 } 
->>>>>>> Stashed changes
 
 /* Estilos para la sección de descripción */
 .slide {
@@ -113,16 +107,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-<<<<<<< Updated upstream
-
-}
-
-.btnbeta {
-  height: 3rem;
-  width: 10rem;
-  border-radius: 2rem;
-=======
->>>>>>> Stashed changes
 }
 
 .text {
@@ -135,19 +119,26 @@ header {
   color: white;
   font-size: 170%;
 }
+
+
+
+/*botao com hover transition (falta setar pra botao global*/
 .btnbeta {
   height: 3rem;
   width: 10rem;
   border-radius: 2rem;
   background-color: #7a121b;
   margin-top: 10px;
+  align-items: center;
+  justify-content: center;
   box-shadow: 3px 4px #414827;
+  transition: .5s;
 }.btnbeta:hover {
   height: 3.5rem;
-  width: 13rem;
-  transition: .5s;
-}
+  width: 12rem; }
 
+
+  
 #participeBeta {
   color: #fca814;
   font-size: 120%;
@@ -158,7 +149,7 @@ header {
 }
 
 .text {
-  padding: 20px;
+  padding: 30px;
 }
 
 .slider-image {
@@ -168,11 +159,6 @@ header {
   flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: center;
-
-}
-.info{
-  background-color: #f6615d
-
 }
 
 .PersonageImage {
@@ -184,13 +170,8 @@ header {
 /* Estilos para el pie de página */
 footer {
   width: 100%;
-<<<<<<< Updated upstream
   height: auto;
-  background-color: #333;
-=======
-  height: 70px;
-  background-color: #708868;
->>>>>>> Stashed changes
+  background-color: #913921;
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
@@ -225,11 +206,10 @@ footer {
   text-decoration: none;
   color: #fca814;
   transition: color 0.3s;
+  transition: .5s;
 }
-
 .menu-text-footer ul li a:hover {
   color: white;
-  transition: .5s;
   font-size: 110%;
 } 
 
