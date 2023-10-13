@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Untitled Foz Game - Jogo da Tríplice Fronteira</title>
     <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/stylebeta.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 
+
 <body>
+
 
     <!-- Não mexer nessa parte -->
     <header>
@@ -39,46 +43,32 @@
                     <li><a href="#"><img class="IdiomaImagem" src="../img/es.svg" alt="Espanhol" width="25"
                                 height="20"></a></li>
                 </ul>
-                          
+                          
             </nav>
         </div>
     </header>
 
+
     <!-- Area do conteudo da pagina só TROCAR O CONTAINER CORRESPONDENTE COM A PAGINA -->
-    <div class="container_description">
-        <div class="cover">
-            <div class="text">
-                <p>Untitled Foz Game</p>
-                <h1>Cadastre-se para o beta!</h1>
-                <form method="post" action="" name="contact-form">
-                    <input type="text" name="Nome" placeholder="Nome">
-                    <input type="email" name="Usuario-email" placeholder="Email" required>
-                    <br>Ps: Nunca vamos mandar spam para seu e-mail!! <br>
-                    <input type="checkbox" id="TermosDeUso" name="aceito" required>
-                    <label for="TermosDeUso"> Li e concordo com os <a href="termoDeUsoTemporário.html"target="_blank">termos de uso</a>.</label>
-                    <br><input type="submit" value="Enviar" id="submit">
-                </form>
-                
-                <h3><br>work in progress</h3>
+    <div class="container_form">
+        <div class="form">
+            <div class="form-container">
+            </div class="context">
+            <p>Untitled Foz Game</p>
+            <h1>Cadastre-se para o beta!</h1>
             </div>
-        </div>
-        <div class="slider-image">
-            <ul>
-                <li><img src="imagen1.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen2.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen3.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen4.jpg" alt="Imagens do jogo"></li>
-                <p><br>Você pode apoiar participando do beta!</p>
-            </ul>
-        </div>
+        <form method="post" action="" name="contact-form">
+            <input type="text" name="Nome" placeholder="Nome">
+            <input type="email" name="Usuario-email" placeholder="Email" required>
+            <br>Ps: Nunca vamos mandar spam para seu e-mail!! <br>
+            <input type="checkbox" id="TermosDeUso" name="aceito" required>
+            <label for="TermosDeUso"> Li e concordo com os <a
+                    href="https://diegocastro.adv.br/modelo-de-termos-de-uso-para-blogs-e-sites/" target="_blank">termos
+                    de uso</a>.</label>
+            <br><input type="submit" value="Enviar" id="submit">
+        </form>
+        <h3><br>work in progress</h3>
     </div>
-    <div class="PersonageImage">
-        <ul>
-            <li><img src="personagem1.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem2.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem3.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem4.jpg" alt="Imagens do jogo"></li>
-        </ul>
     </div>
 
     <!-- Não mexer nessa parte -->
@@ -89,6 +79,7 @@
                     <img src="/assets/img/logoAntiga.png" alt="Logo">
                     <p>Untitled Foz Game</p>
                 </div>
+
 
                 <div class="menu-text-footer">
                     <ul>
@@ -121,7 +112,9 @@
             </div>
         </footer>
     </footer>
+    <script src="../js/script.js"></script>
     <script src="../js/googlesheet.js"></script>
 </body>
+
 
 </html>
