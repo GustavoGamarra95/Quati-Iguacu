@@ -1,0 +1,31 @@
+label.bg-close-popup {
+  animation: popup-opacity 260ms forwards;
+}
+.popup-container {
+  animation: popup-opening 600ms ease forwards;
+}
+label.x-close-popup {
+  animation: popup-opening 600ms ease forwards;
+}
+
+@keyframes popup-opening {
+  0% {
+    transform: translateY(180px);
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes popup-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

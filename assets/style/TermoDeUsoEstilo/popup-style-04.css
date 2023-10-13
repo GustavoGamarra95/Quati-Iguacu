@@ -1,0 +1,55 @@
+:root {
+  /* BOTÃO QUE ATIVA O POPUP */
+  --popup-btn-content: 'termo de uso'; /* Texto */
+  --popup-btn-width: unset; /* Largura */
+  --popup-btn-height: unset; /* Altura */
+  --popup-btn-padding: 1px 1px; /* Preenchimento */
+
+  --popup-btn-size: 1rem;; /* Tamanho do conteúdo */
+  --popup-btn-radius: 4px; /* Arredondamento da borda */
+  --popup-btn-color: #001aff; /* Cor do texto/conteúdo */
+  --popup-btn-bg-color: #ffffff00; /* Cor de fundo */
+  
+
+  /* FUNDO DE TELA ENQUANTO POPUP ATIVO */
+  --active-popup-bg-color: #1515248a; /* Cor de fundo */
+
+
+  /* CONTAINER DO POPUP */
+  --popup-container-width: 700px; /* Largura */
+  --popup-container-height: 700px; /* Altura */
+  --popup-container-bg-color: #383434; /* Cor de fundo */
+  --popup-container-color: #383434; /* Cor do texto/conteúdo */
+  --popup-container-radius: 4px; /* Arredondamento da borda */
+
+
+  /* BOTÃO QUE DESATIVA O POPUP */
+  --popup-close-content: '×'; /* Texto */
+  --popup-close-bg: #fa302c; /* Cor de fundo */
+  --popup-close-color: #f0ecee; /* Cor do texto/conteúdo */
+  --popup-close-width: 24px; /* Largura */
+  --popup-close-height: 24px; /* Altura */
+  --popup-close-size: 22px; /* Tamanho do conteúdo */
+  
+  --popup-close-radius-tl: 50%; /* Arredondamento borda superior esquerda */
+  --popup-close-radius-tr: 50%; /* Arredondamento borda superior direita */
+  --popup-close-radius-br: 50%; /* Arredondamento borda inferior direitaa*/
+  --popup-close-radius-bl: 50%; /* Arredondamento borda inferior esquerda */
+
+  --popup-close-mt: 6px; /* Margem superior */
+  --popup-close-mr: 14px; /* Margem direita */
+  --popup-close-mb: 6px; /* Margem inferior */
+
+  
+  /* CNOTEÚDO DENTRO DO POPUP */
+  --popup-title-size: 1.66rem; /* Tamanho do título */
+  --popup-content-size: 1.14rem; /* Tamanho do conteúdo */
+  --popup-content-color: #e4dada; /* Cor de fundo */
+  
+  --popup-content-mt: 0px; /* Margem superior */
+  --popup-content-mr: 0px; /* Margem direita */
+  --popup-content-mb: 0px; /* Margem inferior */
+  --popup-content-ml: 0px; /* Margem esquerda */
+
+  --popup-content-padding: 20px 14px 14px 14px; /* Preenchimento */
+}

@@ -1,0 +1,133 @@
+.popup-button, .popup-button div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.popup-button label {
+  box-sizing: border-box;
+}
+
+/* Botão que ativa o popup */
+label.open-popup {
+  width: var(--popup-btn-width);
+  height: var(--popup-btn-height);
+  padding: var(--popup-btn-padding);
+  background-color: var(--popup-btn-bg-color);
+  color: var(--popup-btn-color);
+  border-radius: var(--popup-btn-radius);
+
+  font-size: var(--popup-btn-size);
+  
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  top: -19px;
+  left: 170px;
+  width: 100px;
+}
+label.open-popup::after {
+  content: var(--popup-btn-content);
+}
+
+/* Fundo quando popup ativo */
+label.bg-close-popup {
+  background-color: var(--active-popup-bg-color);
+  cursor: default;
+}
+
+/* Container do popup */
+.popup-container {
+  border-radius: var(--popup-container-radius);
+  overflow: hidden;
+}
+.popup-container .popup-content {
+  padding: var(--popup-content-padding);
+  overflow-y: scroll;
+}
+.popup-container .popup-content h3 {
+  font-size: var(--popup-title-size);
+  margin-bottom: 34px;
+  margin-top: 0;
+}
+.popup-container .popup-content p {
+  font-size: var(--popup-content-size);
+}
+
+/* Botão "x" que desativa o popup */
+label.x-close-popup {
+  border-top-left-radius: var(--popup-close-radius-tl);
+  border-top-right-radius: var(--popup-close-radius-tr);
+  border-bottom-left-radius: var(--popup-close-radius-bl);
+  border-bottom-right-radius: var(--popup-close-radius-br);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 900;
+  cursor: pointer;
+}
+
+
+/* ~~~ CONFIGURAÇÕES IMPORTANTES ~~~ */
+
+/* Fundo */
+label.bg-close-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 140vw;
+  height: 140vh;
+}
+input.bg-close-popup:checked ~ .popup-container, 
+input.bg-close-popup:checked ~ label.bg-close-popup, 
+input.bg-close-popup:checked ~ label.x-close-popup {
+  display: none;
+}
+
+/* Botão "x" que desativa o popup */
+label.x-close-popup {
+  color: var(--popup-close-color);
+  background: var(--popup-close-bg);
+  background-size: var(--popup-close-bg-size);
+
+  position: fixed;
+  top: calc(50% - (var(--popup-container-height) / 2) + var(--popup-close-mt));
+  left: calc(50% + ((var(--popup-container-width) / 2) - var(--popup-close-width) - var(--popup-close-mr)));
+  width: var(--popup-close-width);
+  height: var(--popup-close-height);
+  transform-origin: top right;
+  box-sizing: border-box;
+  z-index: 14;
+}
+label.x-close-popup::after {
+  font-size: var(--popup-close-size);
+  content: var(--popup-close-content);
+}
+input.x-close-popup:checked ~ .popup-container,  
+input.x-close-popup:checked ~ label.bg-close-popup,
+input.x-close-popup:checked ~ label.x-close-popup {
+  display: none;
+}
+
+/* Container do popup */
+.popup-container {
+  color: var(--popup-container-color);
+  background-color: var(--popup-container-bg-color);
+  width: var(--popup-container-width);
+  height: var(--popup-container-height);
+  position: fixed;
+  top: calc(50% - (var(--popup-container-height) / 2));
+  left: calc(50% - (var(--popup-container-width) / 2));
+}
+.popup-container .popup-content {
+  margin-top: calc(var(--popup-close-height) + var(--popup-close-mt) + var(--popup-content-mt) + var(--popup-close-mb));
+  margin-left: var(--popup-content-ml);
+  margin-right: var(--popup-content-mr);
+  height: calc(var(--popup-container-height) - var(--popup-close-height) - var(--popup-close-mt) - var(--popup-close-mb) - var(--popup-content-mt) - var(--popup-content-mb));
+  background-color: var(--popup-content-color);
+}
