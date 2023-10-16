@@ -37,6 +37,11 @@ header {
   align-items: center;
 }
 
+#menu-text{
+  position: relative;
+  left: -35px;
+}
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -164,6 +169,13 @@ footer {
   align-items: center;
   margin: 0 0;
   padding: 0 20px;
+}
+
+.footer-logo img{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 10px;
 }
 
 .footer-text h1 {
