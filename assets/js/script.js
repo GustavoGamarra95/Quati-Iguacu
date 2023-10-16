@@ -1,13 +1,12 @@
 // Funcionalidade do botão do idioma
 
 (function() {
-    // Bind Click event to the drop down navigation button
-    document.querySelector('.nav-button').addEventListener('click', function() {
-      /*  Toggle the CSS closed class which reduces the height of the UL thus 
-          hiding all LI apart from the first */
+  // Vincula o evento de clique ao botão de navegação dropdown
+  document.querySelector('.nav-button').addEventListener('click', function() {
+      /* Alterna a classe CSS 'closed', que reduz a altura da UL, escondendo todos os LI, exceto o primeiro */
       this.parentNode.parentNode.classList.toggle('closed')
-    }, false);
-  })();
+  }, false);
+})();
 
 // se encerra aqui
 
