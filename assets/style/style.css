@@ -20,6 +20,7 @@ LINK  h3/p - vermelho : #7a121b
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Source Sans Pro", sans-serif;
   height: 100%;
   width: 100%;
@@ -204,8 +205,11 @@ footer {
   top: 10px;
 }
 
+
 .footer-text h1 {
   color: #fff;
+  padding-top: 20px;
+  position: relative;
 }
 
 .menu-text-footer {
