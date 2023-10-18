@@ -12,6 +12,8 @@ TEXTO  h1/span : white
 LINK  h3/p - vermelho : #7a121b
 */
 
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); /*font LATO */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -313,20 +315,27 @@ nav .drop-down li a {
 
 /*formulario style - contato.html*/
 
+ .contato-h1, .desc-contato-h3{
+  padding: 20px;
+ }
 .formulario {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  width: 600px;
+}
+
+.titulos-formulario{
+  font-family: Lato 2px, sans-serif;
 }
 .form {
-  max-width: 400px;
+  max-width: 600px;
   padding: 20px;
   border-radius: 5px;
 }
 
 .form label {
   display: block;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .form input[type="text"],
@@ -335,13 +344,13 @@ nav .drop-down li a {
 .form textarea {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  
 }
 
 .form textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .form input[type="submit"] {
@@ -354,5 +363,12 @@ nav .drop-down li a {
 }
 
 .form input[type="submit"]:hover {
-  background: #555;
+  background: #671904;
+}
+
+.form .form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
