@@ -38,8 +38,7 @@
                                 height="20"></a></li>
                     <li><a href="#"><img class="IdiomaImagem" src="../img/es.svg" alt="Espanhol" width="25"
                                 height="20"></a></li>
-                </ul>
-                          
+                </ul>           
             </nav>
         </div>
     </header>
@@ -53,27 +52,34 @@
                 <button class="btnbeta"><a href="ParticipeBeta.html">Participe do BetaTest</a></button>
                 <h3><br>Patrocínio: Quer ver seu comércio no jogo? Contate email@email.com ou pelo LinkedIn
                     linkedin.com/in/nome</h3>
-                <h3></h3>
+                    <h3></h3>
+                </div>
             </div>
         </div>
-        <div class="slider-image">
-            <ul>
-                <li><img src="imagen1.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen2.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen3.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen4.jpg" alt="Imagens do jogo"></li>
-                <p><br>Você pode apoiar participando do beta!</p>
-        </div>
-    </div>
-    <div class="PersonageImage">
-        <ul>
-            <li><img src="personagem1.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem2.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem3.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem4.jpg" alt="Imagens do jogo"></li>
-        </ul>
-    </div>
+    
+        <div class="formulario">
+            <form action="processar_formulario.php" method="post" class="form">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
 
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br><br>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade"><br><br>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required><br><br>
+
+                <label for="descricao">Descrição:</label><br>
+                <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     <!-- Não mexer nessa parte -->
     <footer>
         <footer>
@@ -94,16 +100,17 @@
                 <div class="social-media">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/people/Quati-Iguaçu/61552642372835/?mibextid=ZbWKwL" 
-                            target="_blank"><img src="/assets/img/facebook.svg" alt="iconeFacebook" class="socialIcon"></a>
+                            <a href="https://www.facebook.com/people/Quati-Iguaçu/61552642372835/?mibextid=ZbWKwL"
+                                target="_blank"><img src="/assets/img/facebook.svg" alt="iconeFacebook"
+                                    class="socialIcon"></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/quatiiguazu/" 
-                            target="_blank"><img src="/assets/img/instagram.svg" alt="iconeInstagram" class="socialIcon"></a>
+                            <a href="https://www.instagram.com/quatiiguazu/" target="_blank"><img
+                                    src="/assets/img/instagram.svg" alt="iconeInstagram" class="socialIcon"></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/quatiIguazu" 
-                            target="_blank"><img src="/assets/img/twitter.svg" alt="iconeTwitter" class="socialIcon"></a>
+                            <a href="https://twitter.com/quatiIguazu" target="_blank"><img src="/assets/img/twitter.svg"
+                                    alt="iconeTwitter" class="socialIcon"></a>
                         </li>
                     </ul>
                     <p>Participe da conversa</p>

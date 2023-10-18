@@ -292,7 +292,6 @@ nav .drop-down {
   border-radius: 100px;
 }
 
-
 nav .drop-down li {
   background-color: #333333a4;
 }
@@ -311,3 +310,49 @@ nav .drop-down li a {
 }
 
 /* O botão do idioma termina aqui */
+
+/*formulario style - contato.html*/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.form {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form input[type="submit"] {
+  background: #913921;
+  color: #fff;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background: #555;
+}
