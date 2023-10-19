@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled Foz Game - Jogo da Tríplice Fronteira</title>
+    <title>Quati Iguaçu - Jogo da Tríplice Fronteira</title>
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
@@ -38,8 +38,7 @@
                                 height="20"></a></li>
                     <li><a href="#"><img class="IdiomaImagem" src="../img/es.svg" alt="Espanhol" width="25"
                                 height="20"></a></li>
-                </ul>
-                          
+                </ul>           
             </nav>
         </div>
     </header>
@@ -48,39 +47,59 @@
     <div class="container_description">
         <div class="cover">
             <div class="text">
-                <p>Untitled Foz Game</p>
+                <p>Quati Iguaçu</p>
                 <h1>Apoie o jogo da Tríplice Fronteira!</h1>
                 <button class="btnbeta"><a href="ParticipeBeta.html">Participe do BetaTest</a></button>
                 <h3><br>Patrocínio: Quer ver seu comércio no jogo? Contate email@email.com ou pelo LinkedIn
                     linkedin.com/in/nome</h3>
-                <h3></h3>
+                    <h3></h3>
+                </div>
             </div>
         </div>
-        <div class="slider-image">
-            <ul>
-                <li><img src="imagen1.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen2.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen3.jpg" alt="Imagens do jogo"></li>
-                <li><img src="imagen4.jpg" alt="Imagens do jogo"></li>
-                <p><br>Você pode apoiar participando do beta!</p>
-        </div>
-    </div>
-    <div class="PersonageImage">
-        <ul>
-            <li><img src="personagem1.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem2.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem3.jpg" alt="Imagens do jogo"></li>
-            <li><img src="personagem4.jpg" alt="Imagens do jogo"></li>
-        </ul>
-    </div>
 
+
+    
+        <div class="formulario">
+            
+            <h1 class="contato-h1">Contato</h1>
+            <h3 class="desc-contato-h3">Seu contato é muito importante para nós. Preencha os campos abaixo corretamente, que entraremos em contato o mais rápido possível</h3>
+
+            <form action="processar_formulario.php" method="post" class="form">
+                <label for="nome" class="titulos-formulario">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+
+                <div class="form-group">
+                    <div>
+                        <label for="email" class="titulos-formulario">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                
+                    <div>
+                        <label for="telefone" class="titulos-formulario">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                </div>
+                
+                <label for="cidade" class="titulos-formulario" >Cidade:</label>
+                <input type="text" id="cidade" name="cidade"><br><br>
+
+                <label for="assunto" class="titulos-formulario">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required><br><br>
+
+                <label for="descricao" class="titulos-formulario">Descrição:</label><br>
+                <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     <!-- Não mexer nessa parte -->
     <footer>
         <footer>
             <div class="container__footer">
                 <div class="footer-logo">
                     <img src="/assets/img/logoAntiga.png" alt="Logo">
-                    <p>Untitled Foz Game</p>
+                    <p>Quati Iguaçu</p>
                 </div>
 
                 <div class="menu-text-footer">
@@ -94,23 +113,24 @@
                 <div class="social-media">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/people/Quati-Iguaçu/61552642372835/?mibextid=ZbWKwL" 
-                            target="_blank"><img src="/assets/img/facebook.svg" alt="iconeFacebook" class="socialIcon"></a>
+                            <a href="https://www.facebook.com/people/Quati-Iguaçu/61552642372835/?mibextid=ZbWKwL"
+                                target="_blank"><img src="/assets/img/facebook.svg" alt="iconeFacebook"
+                                    class="socialIcon"></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/quatiiguazu/" 
-                            target="_blank"><img src="/assets/img/instagram.svg" alt="iconeInstagram" class="socialIcon"></a>
+                            <a href="https://www.instagram.com/quatiiguazu/" target="_blank"><img
+                                    src="/assets/img/instagram.svg" alt="iconeInstagram" class="socialIcon"></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/quatiIguazu" 
-                            target="_blank"><img src="/assets/img/twitter.svg" alt="iconeTwitter" class="socialIcon"></a>
+                            <a href="https://twitter.com/quatiIguazu" target="_blank"><img src="/assets/img/twitter.svg"
+                                    alt="iconeTwitter" class="socialIcon"></a>
                         </li>
                     </ul>
                     <p>Participe da conversa</p>
                 </div>
             </div>
             <div class="copy">
-                <p>© 2023 Untitled Foz Game. Todos os direitos reservados.</p>
+                <p>© 2023 Quati Iguaçu. Todos os direitos reservados.</p>
             </div>
         </footer>
     </footer>

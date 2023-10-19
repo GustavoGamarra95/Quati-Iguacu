@@ -12,12 +12,15 @@ TEXTO  h1/span : white
 LINK  h3/p - vermelho : #7a121b
 */
 
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); /*font LATO */
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Source Sans Pro", sans-serif;
   height: 100%;
   width: 100%;
@@ -190,8 +193,11 @@ footer {
   top: 10px;
 }
 
+
 .footer-text h1 {
   color: #fff;
+  padding-top: 20px;
+  position: relative;
 }
 
 .menu-text-footer {
@@ -280,7 +286,6 @@ nav .drop-down {
   border-radius: 100px;
 }
 
-
 nav .drop-down li {
   background-color: #333333a4;
 }
@@ -299,3 +304,63 @@ nav .drop-down li a {
 }
 
 /* O botão do idioma termina aqui */
+
+/*formulario style - contato.html*/
+
+ .contato-h1, .desc-contato-h3{
+  padding: 20px;
+ }
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.titulos-formulario{
+  font-family: Lato 2px, sans-serif;
+}
+.form {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form label {
+  display: block;
+  margin-top: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form input[type="submit"] {
+  background: #913921;
+  color: #fff;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background: #671904;
+}
+
+.form .form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
