@@ -1,10 +1,20 @@
-.container_form{
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
+.container_form {
+    
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    height: 550px;
+    background-color: #E7C9AD;
     align-items: center;
-    padding: 0px 20px;
+    margin: 0px 400px;
+
+}
+
+.form {
+    
+    background-color: white;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 60%;
+    width: 100%;
 }
