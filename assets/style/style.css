@@ -39,9 +39,10 @@ header {
 }
 
 .container__menu {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   display: flex;
-  justify-content: space-between; /* Modificado de 'space-around' para 'space-between' */
+  justify-content: space-between;
   align-items: center;
   padding: px 50px;
 }
@@ -49,21 +50,11 @@ header {
 .menu {
   display: flex;
   justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-#menu-text {
-  position: relative;
 }
 
 .logo {
   display: flex;
   justify-content: flex-start; 
-  height: 100%;
-  padding: 0 10px;
-  align-items: center;
-  cursor: pointer;
 }
 
 #imgLogo{
@@ -92,6 +83,22 @@ header {
 .menu ul li a:hover {
   color: #fca814;
   font-size: 110%;
+}
+
+
+/* Media Query para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+  
+  .container__menu {
+    flex-direction: column; /* Muda a direção do flex para coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    padding: px 20px; /* Reduz o padding */
+  }
+
+  .menu {
+    margin-top: 20px; /* Adiciona uma margem superior para separar do logo */
+    justify-content: flex-start; /* Alinha o menu à esquerda */
+  }
 }
 
 /* Estilos para la sección de descripción */
