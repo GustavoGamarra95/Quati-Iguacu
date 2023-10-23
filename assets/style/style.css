@@ -294,7 +294,7 @@ nav .drop-down {
 }
 
 nav .drop-down li {
-  background-color: #913921be;
+  background-color: rgba(255, 255, 255, 0.136);
 }
 
 nav .drop-down.closed {
