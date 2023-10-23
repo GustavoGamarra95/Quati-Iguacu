@@ -25,8 +25,8 @@ label.open-popup {
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
-  top: -19px;
-  left: 170px;
+  top: -38px;
+  left: 160px;
   width: 100px;
 }
 label.open-popup::after {
