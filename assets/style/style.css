@@ -60,15 +60,13 @@ header {
 }
 
 .menu ul li a {
-  transition: all 0.3s ease 0s;
   text-decoration: none;
   color: white;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .menu ul li a:hover {
   color: #fca814;
-  font-size: 110%;
 }
 
 
