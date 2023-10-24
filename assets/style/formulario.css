@@ -1,0 +1,61 @@
+/*formulario style - contato.html*/
+
+.contato-h1,
+.desc-contato-h3 {
+  padding: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.titulos-formulario {
+  font-family: Lato 2px, sans-serif;
+}
+
+.form {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form label {
+  display: block;
+  margin-top: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form input[type="submit"] {
+  background: #913921;
+  color: #fff;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background: #671904;
+}
+
+.form .form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
