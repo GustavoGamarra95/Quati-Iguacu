@@ -175,3 +175,7 @@ button.close {
     height: 50px;
     overflow: scroll
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
