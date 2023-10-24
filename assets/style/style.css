@@ -279,8 +279,5 @@ nav .drop-down.closed {
 nav .drop-down li a {
   display: block;
   padding: 10px;
-  /* Larger touch target area */
-}
-
-/* O botão do idioma termina aqui */
+   }
 

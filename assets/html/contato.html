@@ -8,7 +8,10 @@
     <title>Quati Iguaçu - Jogo da Tríplice Fronteira</title>
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <link rel="stylesheet" type="text/css" href="../style/formulario.css">
+    <link rel="stylesheet" type="text/css" href="../style/stylecontato.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 
@@ -50,53 +53,208 @@
             <div class="text">
                 <p>Quati Iguaçu</p>
                 <h1>Apoie o jogo da Tríplice Fronteira!</h1>
-                <a href="ParticipeBeta.html"><button class="btnbeta"><span class="betaInvite">Participe do Beta</span></button></a>
+                <a href="ParticipeBeta.html"><button class="btnbeta"><span class="betaInvite">Participe do
+                            Beta</span></button></a>
                 <h3><br>Patrocínio: Quer ver seu comércio no jogo? Contate email@email.com ou pelo LinkedIn
                     linkedin.com/in/nome</h3>
-                    <h3></h3>
-                </div>
-            </div>
-            <div class="contactImage">
-                <img src="/assets/img/arte_onça.png" width="400px" height="400px" alt="desenhoOnça">
+                <h3></h3>
             </div>
         </div>
+        <div class="contactImage">
+            <img src="/assets/img/arte_onça.png" width="400px" height="400px" alt="desenhoOnça">
+        </div>
+    </div>
 
 
-    
-        <div class="formulario">
-            
-            <h1 class="contato-h1">Contato</h1>
-            <h3 class="desc-contato-h3">Seu contato é muito importante para nós. Preencha os campos abaixo corretamente, que entraremos em contato o mais rápido possível</h3>
 
-            <form action="processar_formulario.php" method="post" class="form">
-                <label for="nome" class="titulos-formulario">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
+    <!-- <div class="formulario">
 
+        <h1 class="contato-h1">Contato</h1>
+        <h3 class="desc-contato-h3">Seu contato é muito importante para nós. Preencha os campos abaixo corretamente, que
+            entraremos em contato o mais rápido possível</h3>
+
+        <form action="processar_formulario.php" method="post" class="form">
+            <label for="nome" class="titulos-formulario">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+
+            <div class="form-group">
+                <div>
+                    <label for="email" class="titulos-formulario">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="telefone" class="titulos-formulario">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+            </div>
+
+            <label for="cidade" class="titulos-formulario">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"><br><br>
+
+            <label for="assunto" class="titulos-formulario">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required><br><br>
+
+            <label for="descricao" class="titulos-formulario">Descrição:</label><br>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div> -->
+
+    <div class="container">
+
+        <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Contato</legend>
+                <p>Seu contato é muito importante para nós. <br> os campos abaixo corretamente, <br>que entraremos em contato o mais rápido possível</p>
+                
+
+                <!-- Text input-->
 
                 <div class="form-group">
-                    <div>
-                        <label for="email" class="titulos-formulario">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                
-                    <div>
-                        <label for="telefone" class="titulos-formulario">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone">
+                    <label class="col-md-4 control-label">First Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                        </div>
                     </div>
                 </div>
-                
-                <label for="cidade" class="titulos-formulario" >Cidade:</label>
-                <input type="text" id="cidade" name="cidade"><br><br>
 
-                <label for="assunto" class="titulos-formulario">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" required><br><br>
+                <!-- Text input-->
 
-                <label for="descricao" class="titulos-formulario">Descrição:</label><br>
-                <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Last Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
 
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Phone #</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Address</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="address" placeholder="Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">City</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="city" placeholder="city" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Zip Code</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="zip" placeholder="Zip Code" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Website or domain name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                            <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- radio checks -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Do you have hosting?</label>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="hosting" value="yes" /> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="hosting" value="no" /> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text area -->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Project Description</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success message -->
+                <div class="alert alert-success" role="alert" id="success_message">Success <i
+                        class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you
+                    shortly.</div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-warning">Send <span
+                                class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    </div><!-- /.container -->
     <!-- Não mexer nessa parte -->
     <footer>
         <footer>
