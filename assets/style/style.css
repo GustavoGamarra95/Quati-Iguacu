@@ -1,4 +1,5 @@
-
+/*Simple Slug Translate*/
+/*Google Language Translator*/
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 * {
@@ -15,7 +16,7 @@ body {
   background: #708868;
 }
 
-/* Estilos para el encabezado */
+/* Estilos para o cabeçalho do site, incluindo o logotipo e o menu de navegação */
 header {
   display: flex;
   justify-content: space-between;
@@ -80,7 +81,7 @@ header {
   background-color: #913921;
 }
 
-.btnbeta:hover {
+.btnbeta:hover { /* Quando o mouse estiver em cima do botão */
   height: 4rem;
   width: 13rem;
   font-size: 115%;
