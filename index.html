@@ -1,180 +1,376 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html class="no-js" lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quati Iguaçu - Jogo da Tríplice Fronteira</title>
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="../SiteJogo/assets/style/carrousellstyle.css">
-    <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.ico" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<title>Quati Iguaçu - Jogo da Tríplice Fronteira</title>
+
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/tiny-slider.css">
+	<link rel="stylesheet" href="assets/css/glightbox.min.css">
+	<link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+	<link rel="stylesheet" href="assets/css/selectr.css">
+	<link rel="stylesheet" href="assets/css/nouislider.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-5.0.5-alpha.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
 </head>
-
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <img id="imgLogo" src="assets/img/logoAntiga.png" width="70" height="70" alt="Logo do jogo">
-                    </a>
-                </div>
-                <div class="col-8">
-                    <nav class="navbar navbar-expand-lg navbar-light m-au">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html">O Jogo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="assets/html/triplice.html">Tríplice Fronteira</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="assets/html/personagens.html">Personagens</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="assets/html/contato.html">Contato</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="assets/html/mais.html">Mais</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <!-- botao do transale -->
-                <div class="gtranslate_wrapper"></div>
-                <script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "es", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "top", "float_switcher_open_direction": "bottom", "flag_style": "3d", "alt_flags": { "pt": "brazil" } }</script>
-                <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
-            </div>
-    </header>
+	<div class="preloader">
+		<div class="loader">
+			<div class="ytp-spinner">
+				<div class="ytp-spinner-container">
+					<div class="ytp-spinner-rotator">
+						<div class="ytp-spinner-left">
+							<div class="ytp-spinner-circle"></div>
+						</div>
+						<div class="ytp-spinner-right">
+							<div class="ytp-spinner-circle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header_area">
+		<div id="header_navbar" class="header_navbar">
+			<div class="container position-relative">
+				<div class="row align-items-center">
+					<div class="col-xl-12">
+						<nav class="navbar navbar-expand-lg">
+							<a class="navbar-brand" href="index.html">
+								<img id="logo" src="assets/images/logo/logoOficial.png"alt="Logo">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="toggler-icon"></span>
+								<span class="toggler-icon"></span>
+								<span class="toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+								<ul id="nav" class="navbar-nav">
+									
+									<li class="nav-item">
+										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav1" aria-controls="sub-nav1"
+											aria-expanded="false" aria-label="Toggle navigation" href="">O Jogo
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav" aria-controls="sub-nav"
+											aria-expanded="false" aria-label="Toggle navigation" href="/assets/template/triplice.html">Triplice Fronteira
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav" aria-controls="sub-nav"
+											aria-expanded="false" aria-label="Toggle navigation" href="/assets/template/personagens.html">Personagens
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav" aria-controls="sub-nav"
+											aria-expanded="false" aria-label="Toggle navigation" href="/assets/template/assets/html/contato.html">Contato
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav" aria-controls="sub-nav"
+											aria-expanded="false" aria-label="Toggle navigation" href="javascript:void(0)">Mais
+										</a>
+									</li>
+								</ul>
+							</div>
+							
+						</nav> 
+					</div>
+				</div> 
+			</div> 
+		</div> 
+		<!--translate-->
+		<div class="gtranslate_wrapper"></div>
+		<script>window.gtranslateSettings = {"default_language":"pt","native_language_names":true,"detect_browser_language":true,"languages":["pt","es","en"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","switcher_vertical_position":"top","float_switcher_open_direction":"bottom","flag_style":"3d","alt_flags":{"pt":"brazil"}}</script>
+		<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+	</header>
 
-    <div class="container-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/quatip.png" class="d-block w-100" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="/SiteJogo/assets/img/Diseño sin título.png" class="d-block w-100" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="/SiteJogo/assets/img/quatipratos.png" class="d-block w-100" alt="Slide 3">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="info">
-                    <div class="textinfo">
-                        <h2>lorem impsum <br> este texto estava originalmente em portugues</h2>
-                    </div>
-                    <div class="CharacterImg">
-                        <h3>Quati Iguaçu é um projeto de paixão pensado e desenvolvido por acadêmicos da UniAmérica com
-                            o objetivo de valorizar a cultura e as atrações turísticas da região.</h3>
-                        <div class="row">
-                            <div class="col-3">
-                                <img src="personagem1.jpg" alt="Imagens do jogo">
-                            </div>
-                            <div class="col-3">
-                                <img src="personagem2.jpg" alt="Imagens do jogo">
-                            </div>
-                            <div class="col-3">
-                                <img src="personagem3.jpg" alt="Imagens do jogo">
-                            </div>
-                            <div class="col-3">
-                                <img src="personagem4.jpg" alt="Imagens do jogo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	
+	<section id="home" class="hero-area bg_cover">
+		<div class="container">
+			<div class="row">
+				<div class="mx-auto col-lg-9 col-xl-9 col-md-10">
+					<div class="text-center hero-content">
+					
 
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="footer-logo">
-                            <img src="/assets/img/logoAntiga.png" alt="Logo">
-                            <p>Quati Iguaçu</p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="menu-text-footer">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">O Jogo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="assets/html/triplice.html">Tríplice Fronteira</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="assets/html/contato.html">Contato</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="assets/html/mais.html">Mais</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row-4">
-                        <div class="social-media">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="assets/img/facebook.svg" alt="iconeFacebook"
-                                            class="socialIcon">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/quatiiguazu" target=“_blank”><img
-                                            src="assets/img/instagram.svg" alt="iconeInstagram" class="socialIcon"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="assets/img/twitter.svg" alt="iconeTwitter" class="socialIcon">
-                                    </a>
-                                </li>
-                            </ul>
-                            <p>Participe da conversa</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copy">
-                <p>&copy; 2023 Quati Iguaçu. Todos os direitos reservados.</p>
-            </div>
-        </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="/assets/js/script.js"></script>
+						
+						<div class="row align-items-center">
+							<div class="col-lg-7">
+								<div class="subscribe-content section-title">
+									<h1 class="text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Junte-se a nossa aventura! pelos restaurantes da Tríplice Fronteira!</font></font></h1>
+									<p class="text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Regístrate para recibir notificaciones sobre lanzamientos, actualizaciones y eventos interesantes de juegos.</font></font></p>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="subscribe-form-wrapper">
+									<form action="#" class="subscribe-form">
+										<a href="/assets/html/ParticipeBeta.html" rel="nofollow" class="main-btn btn-hover" style="color: #fca814;">Participe do beta!</a>
+										
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<section class="pricing-area pt-140 pb-140">
+		<div class="container">
+			<div class="row">
+				<div class="mx-auto col-xl-6 col-lg-7 col-md-10">
+					<div class="text-center section-title mb-90">
+						<h1>Select a Package</h1>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				
+				<div class="col-lg-4 col-md-8 col-sm-10 col-11">
+					<div class="single-pricing">
+						<div class="icon">
+							<i class="lni lni-layers"></i>
+						</div>
+						<h3 class="name">Basic Pack</h3>
+						<ul>
+							<li>Free ad posting</li>
+							<li>6 Featured ads availability</li>
+							<li>For 30 days</li>
+							<li>100% Secure!</li>
+						</ul>
+						<h2 class="price"> <sup>$</sup> 20.00</h2>
+						<span class="time">Monthly</span>
+
+						<a href="javascript:void(0)" class="main-btn btn-hover">Buy Now</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-8 col-sm-10 col-11">
+					<div class="single-pricing standard">
+						<div class="icon">
+							<i class="lni lni-leaf"></i>
+						</div>
+						<h3 class="name">Standard Pack</h3>
+						<ul>
+							<li>Free ad posting</li>
+							<li>9 Featured ads availability</li>
+							<li>For 30 days</li>
+							<li>100% Secure!</li>
+						</ul>
+						<h2 class="price"> <sup>$</sup> 29.00</h2>
+						<span class="time">Monthly</span>
+
+						<a href="javascript:void(0)" class="main-btn btn-hover">Buy Now</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-8 col-sm-10 col-11">
+					<div class="single-pricing">
+						<div class="icon">
+							<i class="lni lni-diamond-alt"></i>
+						</div>
+						<h3 class="name">Premium Pack</h3>
+						<ul>
+							<li>Free ad posting</li>
+							<li>20 Featured ads availability</li>
+							<li>For 30 days</li>
+							<li>100% Secure!</li>
+						</ul>
+						<h2 class="price"> <sup>$</sup> 49.00</h2>
+						<span class="time">Monthly</span>
+
+						<a href="javascript:void(0)" class="main-btn btn-hover">Buy Now</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="subscribe-area">
+		<div class="container">
+			<div class="subscribe-wrapper bg_cover">
+				<div class="row align-items-center">
+					<div class="col-lg-7">
+						<div class="subscribe-content section-title">
+							<h1 class="text-white">Seja o Primeiro a Saber as Novidades do Jogo</h1>
+							<p class="text-white">Inscreva-se para receber notificações sobre lançamentos, atualizações e eventos emocionantes do jogo.</p>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="subscribe-form-wrapper">
+							<form action="#" class="subscribe-form">
+								<input type="email" name="sub-email" placeholder="Enter your">
+								<button><i class="lni lni-telegram-original"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-area">
+		<div class="widget-wrapper ">
+			<div class="map-img">
+				<img src="assets/images/footer/map-img.|svg" alt="">
+			</div>
+			<div class="container position-relative d-flex lni-grid justify-content-center">
+				<div class="row">
+
+					<div class="col-xl-8 col-md-7 row">
+						<div class="footer-widget about row">
+							<a href="index.html" class="d-inline-block mb-30">
+								<img src="assets/images/logo/logoOficial.png" width="70" height="70" alt="">
+							</a>
+							<p class="text-white mb-25">Junte-se a conversa!</p>
+							<ul class="social">
+								<li><a target="_blank" href="https://www.facebook.com/profile.php?id=61552642372835"><i class="lni lni-facebook-filled"></i></a></li>
+								<li><a target="_blank" href="https://twitter.com/quatiIguazu"><i class="lni lni-twitter-filled"></i></a></li>
+								<li><a target="_blank" href="https://www.instagram.com/quatiiguazu/"><i class="lni lni-instagram-filled"></i></a></li>
+								<li><a target="_blank" href="javascript:void(0)"><i class="lni lni-discord"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-xl-4 col-md-4 order-md-2 order-xl-1 col-sm-6 d-flex-right text-center ">
+						<div class="footer-widget">
+							<h4>Acesso rápido</h4>
+							<ul class="link">
+								<li><a href="javascript:void(0)">O Jogo</a></li>
+								<li><a href="javascript:void(0)">Tríplice Fronteira</a></li>
+								<li><a href="javascript:void(0)">Personagens</a></li>
+								<li><a href="javascript:void(0)">Contato</a></li>
+								<li><a href="javascript:void(0)">Mais</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="copy-right">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="text-center">
+							<p>&copy; 2023 Quati Iguaçu. Todos os direitos reservados.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--====== FOOTER PART ENDS ======-->
+
+	<!--====== BACK TOP TOP PART START ======-->
+	<a href="#" class="back-to-top btn-hover"><i class="lni lni-chevron-up"></i></a>
+	<!--====== BACK TOP TOP PART ENDS ======-->
+
+
+	<!--====== Bootstrap js ======-->
+	<script src="assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
+
+	<!--====== Tiny slider js ======-->
+	<script src="assets/js/tiny-slider.js"></script>
+
+	<!--====== wow js ======-->
+	<script src="assets/js/wow.min.js"></script>
+
+	<!--====== glightbox js ======-->
+	<script src="assets/js/glightbox.min.js"></script>
+	
+	<!--====== Selectr js ======-->
+	<script src="assets/js/selectr.min.js"></script>
+
+	<!--====== Nouislider js ======-->
+	<script src="assets/js/nouislider.js"></script>
+
+	<!--====== Main js ======-->
+	<script src="assets/js/main.js"></script>
+
+	<script>
+
+		//========= glightbox
+		const myGallery = GLightbox({
+			'href': 'assets/video/Free App Landing Page Template - AppLand.mp4',
+			'type': 'video',
+			'source': 'youtube', //vimeo, youtube or local
+			'width': 900,
+			'autoplayVideos': true,
+		});
+
+		//======== tiny slider for feature-product-carousel
+		tns({
+			slideBy: 'page',
+			autoplay: false,
+			mouseDrag: true,
+			gutter: 20,
+			nav: false,
+			controls: true,
+			controlsPosition: 'bottom',
+			controlsText: [
+				'<span class="prev"><i class="lni lni-chevron-left"></i></span>', 
+				'<span class="next"><i class="lni lni-chevron-right"></i></span>'
+			],
+			container: ".feature-product-carousel",
+			items: 1,
+			center: false,
+			autoplayTimeout: 5000,
+			swipeAngle: false,
+			speed: 400,
+			responsive: {
+				768: {
+					items: 2,
+				},
+
+				992: {
+					items: 2,
+				},
+
+				1200: {
+					items: 3,
+				}
+			}
+		});
+
+		//======== tiny slider for testimonial
+		tns({
+			slideBy: 'page',
+			autoplay: false,
+			mouseDrag: true,
+			gutter: 20,
+			nav: true,
+			controls: false,
+			container: ".testimonial-carousel",
+			items: 1,
+			center: false,
+			autoplayTimeout: 5000,
+			swipeAngle: false,
+			speed: 400,
+			responsive: {
+				768: {
+					items: 2,
+				},
+				1200: {
+					items: 3,
+				}
+			}
+		});
+	</script>
+
 </body>
 
 </html>
