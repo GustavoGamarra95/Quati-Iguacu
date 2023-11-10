@@ -100,22 +100,32 @@
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6">
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+						<!--COMEÇO DO FORM-->
+
+                        <form method="post" action="" name="contact-form" id="contactForm">
                             <div class="form-floating mb-3">
-								<label for="name">Nome Completo</label>
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+								<label for="name">Seu nome</label>
+                                <input class="form-control" id="name" type="text" name="Nome" placeholder="Seu nome aqui.." data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <div class="form-floating mb-3">
-								<label for="email">Email</label>
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+								<label for="email">Seu Email</label>
+                                <input class="form-control" id="email" type="email" name="Usuario-email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">E necessario colocar um email</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email nao valido.</div>
+
                             </div>
+							<p style="color:black">Li e concordo com os termos</p> 
+							<input type="checkbox" id="TermosDeUso" name="aceito" required>
                         
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erro no envio da consulta!</div></div>
-                            <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                            <div class="d-grid"><input type="submit" value="Enviar" id="submit">Enviar</div>
+							
                         </form>
+
+						<!--FIM DO FORM-->
+
                     </div>
                 </div>
             </div>
