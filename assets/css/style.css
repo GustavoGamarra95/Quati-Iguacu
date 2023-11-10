@@ -13,6 +13,7 @@
     01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,6 +34,16 @@ body {
 img {
   max-width: 100%;
 }
+
+
+
+
+.navbar_toggler {
+  justify-self: start;
+}
+
+
+
 
 a:focus,
 input:focus,
@@ -130,7 +141,8 @@ h6 {
   font-size: 16px;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
@@ -200,7 +212,7 @@ textarea:focus {
   line-height: 45px;
   font-size: 20px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 50%;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -386,24 +398,31 @@ textarea:focus {
   12.5% {
     transform: rotate(135deg);
   }
+
   25% {
     transform: rotate(270deg);
   }
+
   37.5% {
     transform: rotate(405deg);
   }
+
   50% {
     transform: rotate(540deg);
   }
+
   62.5% {
     transform: rotate(675deg);
   }
+
   75% {
     transform: rotate(810deg);
   }
+
   87.5% {
     transform: rotate(945deg);
   }
+
   to {
     transform: rotate(1080deg);
   }
@@ -413,9 +432,11 @@ textarea:focus {
   0% {
     transform: rotate(130deg);
   }
+
   50% {
     transform: rotate(-5deg);
   }
+
   to {
     transform: rotate(130deg);
   }
@@ -425,9 +446,11 @@ textarea:focus {
   0% {
     transform: rotate(-130deg);
   }
+
   50% {
     transform: rotate(5deg);
   }
+
   to {
     transform: rotate(-130deg);
   }
@@ -1164,7 +1187,7 @@ textarea:focus {
   width: 100%;
   z-index: 999;
   background-color: #913921;
-  
+
 }
 
 .sticky {
@@ -1224,17 +1247,17 @@ textarea:focus {
   padding: 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {/*modifica apenas em telas menores em tablets*/
   .navbar-toggler {
     position: absolute;
-    right: 0;
+    left: 11%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {/*modifica apenas em telas menores*/
   .navbar-toggler {
     position: absolute;
-    right: 0;
+    left: 25%;
   }
 }
 
@@ -1267,7 +1290,10 @@ textarea:focus {
 }
 
 .navbar-collapse {
+  margin-top: 5px;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.711);
+  border-radius: 20px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1276,12 +1302,11 @@ textarea:focus {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
     max-height: 300px;
     overflow-y: auto;
     z-index: 9;
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding: 5px 12px;
+    padding: 5px 20px;
   }
 }
 
@@ -1291,12 +1316,11 @@ textarea:focus {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
     max-height: 300px;
     overflow-y: auto;
     z-index: 9;
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding: 5px 12px;
+    padding: 5px 20px;
   }
 }
 
@@ -1475,23 +1499,29 @@ textarea:focus {
   }
 }
 
-.navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
+.navbar-nav .nav-item .sub-menu li a.active,
+.navbar-nav .nav-item .sub-menu li a:hover {
   padding-left: 25px;
   color: #fca814;
 }
 
-.navbar-nav .nav-item .sub-menu li a.active::after, .navbar-nav .nav-item .sub-menu li a:hover::after {
+.navbar-nav .nav-item .sub-menu li a.active::after,
+.navbar-nav .nav-item .sub-menu li a:hover::after {
   width: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
+
+  .navbar-nav .nav-item .sub-menu li a.active,
+  .navbar-nav .nav-item .sub-menu li a:hover {
     padding-left: 0;
   }
 }
 
 @media (max-width: 767px) {
-  .navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
+
+  .navbar-nav .nav-item .sub-menu li a.active,
+  .navbar-nav .nav-item .sub-menu li a:hover {
     padding-left: 0;
   }
 }
@@ -1641,7 +1671,8 @@ textarea:focus {
   background-color: #fca814;
 }
 
-.sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
+.sticky .navbar-nav .nav-item a.active,
+.sticky .navbar-nav .nav-item a:hover {
   color: #fca814;
 }
 
@@ -1704,6 +1735,7 @@ hero area css
   position: relative;
   z-index: 1;
 }
+
 .hero-area .hero-content {
   padding: 270px 0 260px;
 }
@@ -1784,7 +1816,8 @@ hero area css
   transform: translateY(-50%);
 }
 
-.search-area .search-wrapper form input, .search-area .search-wrapper form select {
+.search-area .search-wrapper form input,
+.search-area .search-wrapper form select {
   width: 100%;
   background: #fff;
   border-radius: 30px;
@@ -1842,7 +1875,8 @@ hero area css
   background-color: #fca814;
 }
 
-.category-list-area .category-list-wrapper .category-list-item a:hover .icon, .category-list-area .category-list-wrapper .category-list-item a:hover h3 {
+.category-list-area .category-list-wrapper .category-list-item a:hover .icon,
+.category-list-area .category-list-wrapper .category-list-item a:hover h3 {
   color: #fff;
 }
 
@@ -2241,11 +2275,11 @@ hero area css
   width: 100%;
 }
 
-.single-product.list-view .product-img > a {
+.single-product.list-view .product-img>a {
   height: 100%;
 }
 
-.single-product.list-view .product-img > a img {
+.single-product.list-view .product-img>a img {
   height: 100%;
   object-position: center;
   object-fit: cover;
@@ -2578,7 +2612,8 @@ hero area css
   }
 }
 
-.product-details-area .product-details-wrapper .review-wrapper .review-body .add-review-wrapper .review-form input, .product-details-area .product-details-wrapper .review-wrapper .review-body .add-review-wrapper .review-form textarea {
+.product-details-area .product-details-wrapper .review-wrapper .review-body .add-review-wrapper .review-form input,
+.product-details-area .product-details-wrapper .review-wrapper .review-body .add-review-wrapper .review-form textarea {
   border-color: rgba(124, 134, 154, 0.6);
   border-radius: 30px;
   margin-top: 8px;
@@ -2619,7 +2654,8 @@ Service css
   color: #fff;
 }
 
-.service-area .single-service:hover .service-content h3, .service-area .single-service:hover .service-content p {
+.service-area .single-service:hover .service-content h3,
+.service-area .single-service:hover .service-content p {
   color: #fff;
 }
 
@@ -2877,9 +2913,11 @@ video css
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -3161,15 +3199,18 @@ video css
   transition: all 0.3s ease-out 0s;
 }
 
-.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a.active, .dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a:hover {
+.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a.active,
+.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a:hover {
   background: #F5F7FC;
 }
 
-.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a.active::before, .dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a:hover::before {
+.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a.active::before,
+.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a:hover::before {
   background: #fca814;
 }
 
-.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a.active i, .dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a:hover i {
+.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a.active i,
+.dashboard-area .left-sidebar-wrapper .sidebar-menu ul li a:hover i {
   color: #fca814;
 }
 
@@ -3201,7 +3242,8 @@ video css
   margin-bottom: 5px;
 }
 
-.dashboard-area .dashboard-wrapper .cards-wrapper .ads-btn:hover, .dashboard-area .dashboard-wrapper .cards-wrapper .ads-btn.active {
+.dashboard-area .dashboard-wrapper .cards-wrapper .ads-btn:hover,
+.dashboard-area .dashboard-wrapper .cards-wrapper .ads-btn.active {
   background: #fca814;
   color: #fff;
 }
@@ -3238,7 +3280,8 @@ video css
   color: #fca814;
 }
 
-.dashboard-area .dashboard-wrapper .cards-wrapper .single-card:hover .text h5, .dashboard-area .dashboard-wrapper .cards-wrapper .single-card:hover .text p {
+.dashboard-area .dashboard-wrapper .cards-wrapper .single-card:hover .text h5,
+.dashboard-area .dashboard-wrapper .cards-wrapper .single-card:hover .text p {
   color: #fff;
 }
 
@@ -3282,11 +3325,14 @@ video css
   transition: all 0.3s ease-out 0s;
 }
 
-.dashboard-area .dashboard-wrapper .table-wrapper thead, .dashboard-area .dashboard-wrapper .table-wrapper tbody, .dashboard-area .dashboard-wrapper .table-wrapper td, .dashboard-area .dashboard-wrapper .table-wrapper th {
+.dashboard-area .dashboard-wrapper .table-wrapper thead,
+.dashboard-area .dashboard-wrapper .table-wrapper tbody,
+.dashboard-area .dashboard-wrapper .table-wrapper td,
+.dashboard-area .dashboard-wrapper .table-wrapper th {
   border: none;
 }
 
-.dashboard-area .dashboard-wrapper .table-wrapper .table > :not(caption) > * > * {
+.dashboard-area .dashboard-wrapper .table-wrapper .table> :not(caption)>*>* {
   padding: 1rem .5rem;
   margin-bottom: 10px;
 }
@@ -3782,15 +3828,18 @@ footer css
   padding: 25px 0;
 }
 
-.footer-area .copy-right .left p, .footer-area .copy-right .right p {
+.footer-area .copy-right .left p,
+.footer-area .copy-right .right p {
   color: #fff;
 }
 
-.footer-area .copy-right .left a, .footer-area .copy-right .right a {
+.footer-area .copy-right .left a,
+.footer-area .copy-right .right a {
   color: #fff;
 }
 
-.footer-area .copy-right .left a:hover, .footer-area .copy-right .right a:hover {
+.footer-area .copy-right .left a:hover,
+.footer-area .copy-right .right a:hover {
   color: #fca814;
 }
 
