@@ -1,10 +1,10 @@
-(function() {
-    
+(function () {
+
     "use strict";
-    
+
     //===== Prealoder
 
-    window.onload = function() {
+    window.onload = function () {
         window.setTimeout(fadeout, 500);
     }
 
@@ -13,7 +13,7 @@
         document.querySelector('.preloader').style.display = 'none';
     }
 
-    
+
     /*=====================================
     Sticky
     ======================================= */
@@ -45,10 +45,20 @@
 
     //===== close navbar-collapse when a  clicked
     let navbarToggler = document.querySelector(".navbar-toggler");
-    navbarToggler.addEventListener('click', function() {
+    navbarToggler.addEventListener('click', function () {
         navbarToggler.classList.toggle("active");
-    }) 
+    })
 
+    let navbarCollapse = document.querySelector(".navbar-collapse");//reconhece a barra de navbar
+
+    document.addEventListener("click", function (e) { //adiciona um escutador de clique
+        if (e.target !== navbarToggler && e.target.closest(".navbar-collapse") !== navbarCollapse) {//verifica se nao foi clicado na barra navbar e nao é botao de navbar
+            if (navbarCollapse.classList.contains("show")) {//verifica se a barra navbar esta sendo exibida
+                navbarCollapse.classList.remove('show')//se estiver, esconde (remove a classe show)
+                navbarToggler.classList.remove('active')//e desativa o estado de navbar aberta do botao
+            }
+        }
+    });//☝️🤓<--will
 
     //WOW Scroll Spy
     var wow = new WOW({
