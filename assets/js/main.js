@@ -58,8 +58,7 @@
                 navbarToggler.classList.remove('active')//e desativa o estado de navbar aberta do botao
             }
         }
-    });//☝️🤓<--will
-
+    });
     //WOW Scroll Spy
     var wow = new WOW({
         //disabled for mobile
