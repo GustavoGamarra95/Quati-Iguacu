@@ -96,38 +96,42 @@
 				</div>
 				<div class="row gx-5 justify-content-center">
 					<div class="col-lg-8 col-xl-6">
-						<form id="contactForm" data-sb-form-api-token="API_TOKEN">
-							<div class="form-floating mb-3">
-								<label for="name">Nome Completo</label>
+						<form id="contactForm" data-sb-form-api-token="API_TOKEN" onsubmit="return validateForm()">
+							<div class="mb-3">
+								<label for="name" class="form-label">Nome Completo</label>
 								<input class="form-control" id="name" type="text" placeholder="Insira seu nome completo." data-sb-validations="required" />
 								<div class="invalid-feedback" data-sb-feedback="name:required">É necessário inserir um nome.</div>
 							</div>
-							<div class="form-floating mb-3">
-								<label for="email">Email</label>
+							<div class="mb-3">
+								<label for="email" class="form-label">Email</label>
 								<input class="form-control" id="email" type="email" placeholder="email@exemplo.com" data-sb-validations="required,email" />
 								<div class="invalid-feedback" data-sb-feedback="email:required">É necessário inserir um e-mail.</div>
 								<div class="invalid-feedback" data-sb-feedback="email:email">E-mail não válido.</div>
 							</div>
-							<div class="form-floating mb-3">
-								<label for="phone">Telefone</label>
+							<div class="mb-3">
+								<label for="phone" class="form-label">Telefone</label>
 								<input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
 								<div class="invalid-feedback" data-sb-feedback="phone:required">É necessário inserir um número de telefone.</div>
 							</div>
-							<div class="form-floating mb-3">
-								<label for="message">Mensagem</label>
-								<textarea class="form-control" id="message" type="text" placeholder="Insira sua mensagem aqui." style="height: 10rem" data-sb-validations="required"></textarea>
+							<div class="mb-3">
+								<label for="message" class="form-label">Mensagem</label>
+								<textarea class="form-control" id="message" placeholder="Insira sua mensagem aqui." style="height: 10rem; resize: none;" data-sb-validations="required"></textarea>
 								<div class="invalid-feedback" data-sb-feedback="message:required">É necessário inserir uma mensagem.</div>
 							</div>
-							<div class="d-none" id="submitSuccessMessage">
-								<div class="text-center mb-3">
-									<div class="fw-bolder">Consulta enviada com sucesso!</div>
+							<div class="mb-3">
+								<div class="d-none" id="submitSuccessMessage">
+									<div class="text-center mb-3">
+										<div class="fw-bolder text-success">Consulta enviada com sucesso!</div>
+									</div>
+								</div>
+								<div class="d-none" id="submitErrorMessage">
+									<div class="text-center text-danger mb-3">Erro no envio da consulta!</div>
 								</div>
 							</div>
-							<div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erro no envio da consulta!</div></div>
 							<div class="d-grid">
-								<button class="btn btn-lg disabled" id="submitButton" type="submit" style="background-color: #913921;color: #ffffff;">Enviar</button>
+								<button class="btn btn-success btn-lg enable" id="submitButton" type="submit">Enviar</button>
 							</div>
-						</form>
+						</form>						
 					</div>
 				</div>
 			</div>
@@ -194,6 +198,8 @@
 
 	<!--====== Bootstrap js ======-->
 	<script src="/assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
+	
+	<script src="../js/googlesheet.js"></script>
 
 	<!--====== Tiny slider js ======-->
 	<script src="/assets/js/tiny-slider.js"></script>
@@ -212,6 +218,22 @@
 
 	<!--====== Main js ======-->
 	<script src="/assets/js/main.js"></script>
+
+	<script>
+		function validateForm() {
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var phone = document.getElementById('phone').value;
+			var message = document.getElementById('message').value;
+	
+			if (name.trim() === '' || email.trim() === '' || phone.trim() === '' || message.trim() === '') {
+				alert('Por favor, preencha todos os campos.');
+				return false; // Impede o envio do formulário
+			}
+	
+			return true; // Permite o envio do formulário
+		}
+	</script>
 
 	<script>
 
