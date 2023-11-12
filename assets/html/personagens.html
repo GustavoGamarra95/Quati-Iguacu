@@ -75,10 +75,9 @@
 									</li>
 								</ul>
 								<div class="gtranslate_wrapper"></div>
-	                			<script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "es", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "top", "float_switcher_open_direction": "bottom", "flag_style": "3d", "alt_flags": { "pt": "brazil" } }</script>
+	                			<script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "es", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "top", "float_switcher_open_direction": "bottom", "flag_style": "2d", "alt_flags": { "pt": "brazil" } }</script>
 	                			<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 							</div>
-							
 						</nav> 
 					</div>
 				</div> 
@@ -92,11 +91,13 @@
 			<div class="row">
 				<div class="mx-auto col-lg-9 col-xl-9 col-md-10">
 					<div class="text-center hero-content">
-						<h1 class="mb-30 wow fadeInUp" style="text-shadow: 2px 2px black;" data-wow-delay=".2s">Quati Iguaçu</h1>
-						<p class="wow fadeInUp" style="text-shadow: 2px 2px black;" data-wow-delay=".4s">Junte-se a nossa aventura pelos restaurantes da Tríplice Fronteira!</p></br>
-
-						<a href="/assets/html/ParticipeBeta.html" rel="nofollow" class="main-btn btn-hover" style="color: #fca814;">Participe do beta!</a>
-
+						<h1 class="mb-30 wow fadeInUp" data-wow-delay=".2s">Quati Iguaçu</h1>
+						<p class="wow fadeInUp" data-wow-delay=".4s">Junte-se a nossa aventura pelos restaurantes da Tríplice Fronteira!</p>
+						<div class="subscribe-form-wrapper">
+							<form action="#" class="subscribe-form wow fadeInUp" data-wow-delay="1s">
+								<a href="/assets/html/participeBeta.html" rel="nofollow" class="main-btn btn-hover" style="color: #fca814;">Participe do beta!</a>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -108,8 +109,8 @@
 		  <div class="card h-100">
 			<img src="/assets/images/arte_onça.png" class="card-img-top" alt="...">
 			<div class="card-body">
-			  <h5 class="card-title">O Onça</h5>
-			  <p class="card-text" style="color: black;">O Onça é o Renomado Chefe da Cozinha, criou sua própria franquia de restaurantes na tríplice fronteira o Restaurante da Onça.</p>
+			  <h5 class="card-title" style="color: #913921;">A Onça</h5>
+			  <p class="card-text" style="color: black;">A Onça é o Renomado Chefe da Cozinha, criou sua própria franquia de restaurantes na tríplice fronteira o Restaurante da Onça.</p>
 			</div>
 		  </div>
 		</div>
@@ -117,7 +118,7 @@
 		  <div class="card h-100">
 			<img src="/assets/images/quatipratos.png" class="card-img-top" alt="...">
 			<div class="card-body">
-			  <h5 class="card-title">Quati</h5>
+			  <h5 class="card-title" style="color: #913921;">Quati</h5>
 			  <p class="card-text" style="color: black;">O quati é o personagem principal e garçom do Restaurante da Onça.</p>
 			</div>
 
@@ -127,14 +128,14 @@
 		  <div class="card h-100">
 			<img src="/assets/images/familia_jacare.png" class="card-img-top" alt="...">
 			<div class="card-body">
-			  <h5 class="card-title">Família Jacaré</h5>
+			  <h5 class="card-title" style="color: #913921;" >Família Jacaré</h5>
 			  <p class="card-text" style="color: black;">A família jacaré é formada por Jaco, Jana e seus filhotes Joca e Juca. Eles são fãs do Restaurante da Onça, onde saboreiam a comida típica da tríplice fronteira.</p>
 			</div>
 		  </div>
 		</div>
 	  </div>
 
-	<footer class="footer-area">
+	  <footer class="footer-area">
 		<div class="widget-wrapper ">
 			<div class="map-img">
 				<img src="/assets/images/footer/map-img.svg" alt="">
@@ -157,14 +158,14 @@
 						</div>
 					</div>
 
-					<div class="col-xl-4 col-md-4 order-md-2 order-xl-1 col-sm-6 d-flex-right text-center ">
+					<div class="col-xl-4 col-md-4 order-md-2 order-xl-1 col-sm-6 d-flex-right text-right ">
 						<div class="footer-widget">
 							<h4>Acesso rápido</h4>
 							<ul class="link">
-								<li><a href="/index.html">O JOGO</a></li>
-								<li><a href="/assets/html/triplice.html">TRÍPLICE FRONTEIRA</a></li>
-								<li><a href="/assets/html/personagens.html">PERSONAGENS</a></li>
-								<li><a href="/assets/html/contato.html">CONTATO</a></li>
+								<li><a href="javascript:void(0)">O Jogo</a></li>
+								<li><a href="javascript:void(0)">Tríplice Fronteira</a></li>
+								<li><a href="javascript:void(0)">Personagens</a></li>
+								<li><a href="javascript:void(0)">Contato</a></li>
 							</ul>
 						</div>
 					</div>
@@ -212,76 +213,6 @@
 
 	<!--====== Main js ======-->
 	<script src="/assets/js/main.js"></script>
-
-	<script>
-
-		//========= glightbox
-		const myGallery = GLightbox({
-			'href': 'assets/video/Free App Landing Page Template - AppLand.mp4',
-			'type': 'video',
-			'source': 'youtube', //vimeo, youtube or local
-			'width': 900,
-			'autoplayVideos': true,
-		});
-
-		//======== tiny slider for feature-product-carousel
-		tns({
-			slideBy: 'page',
-			autoplay: false,
-			mouseDrag: true,
-			gutter: 20,
-			nav: false,
-			controls: true,
-			controlsPosition: 'bottom',
-			controlsText: [
-				'<span class="prev"><i class="lni lni-chevron-left"></i></span>', 
-				'<span class="next"><i class="lni lni-chevron-right"></i></span>'
-			],
-			container: ".feature-product-carousel",
-			items: 1,
-			center: false,
-			autoplayTimeout: 5000,
-			swipeAngle: false,
-			speed: 400,
-			responsive: {
-				768: {
-					items: 2,
-				},
-
-				992: {
-					items: 2,
-				},
-
-				1200: {
-					items: 3,
-				}
-			}
-		});
-
-		//======== tiny slider for testimonial
-		tns({
-			slideBy: 'page',
-			autoplay: false,
-			mouseDrag: true,
-			gutter: 20,
-			nav: true,
-			controls: false,
-			container: ".testimonial-carousel",
-			items: 1,
-			center: false,
-			autoplayTimeout: 5000,
-			swipeAngle: false,
-			speed: 400,
-			responsive: {
-				768: {
-					items: 2,
-				},
-				1200: {
-					items: 3,
-				}
-			}
-		});
-	</script>
 
 </body>
 

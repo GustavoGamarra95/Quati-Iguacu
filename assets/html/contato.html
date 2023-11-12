@@ -16,6 +16,11 @@
 	<link rel="stylesheet" href="/assets/css/nouislider.css">
 	<link rel="stylesheet" href="/assets/css/bootstrap-5.0.5-alpha.min.css">
 	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/contato.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 
 
 </head>
@@ -76,7 +81,7 @@
 									</li>
 								</ul>
 								<div class="gtranslate_wrapper"></div>
-	                			<script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "es", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "top", "float_switcher_open_direction": "bottom", "flag_style": "3d", "alt_flags": { "pt": "brazil" } }</script>
+	                			<script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "es", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "top", "float_switcher_open_direction": "bottom", "flag_style": "2d", "alt_flags": { "pt": "brazil" } }</script>
 	                			<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 							</div>
 							
@@ -86,17 +91,12 @@
 			</div> 
 		</div> 
 	</header>
-
-	<section class="py-8 mb-4 mt-4">
-	<div class="container px-5">
-			<div class="bg-light py-5 px-4 px-md-5" style="border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);" > 
-			<div class="text-center mb-5">
-					<h1 class="fw-bolder" style="color: #913921; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Seu contato é muito importante para nós.</h1>
-					<p class="lead fw-normal text-muted mb-0"> Preencha os campos abaixo corretamente, que<br> entraremos em contato o mais rápido possível </p>
-				</div>
-				<div class="row gx-5 justify-content-center">
-					<div class="col-lg-8 col-xl-6">
-						<form id="contactForm" data-sb-form-api-token="API_TOKEN" onsubmit="return validateForm()">
+	<div class="contact-us section mb-4 mt-4" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="contact-form">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN" onsubmit="return validateForm()">
 							<div class="mb-3">
 								<label for="name" class="form-label">Nome Completo</label>
 								<input class="form-control" id="name" type="text" placeholder="Insira seu nome completo." data-sb-validations="required" />
@@ -105,7 +105,7 @@
 							<div class="mb-3">
 								<label for="email" class="form-label">Email</label>
 								<input class="form-control" id="email" type="email" placeholder="email@exemplo.com" data-sb-validations="required,email" />
-								<div class="invalid-feedback" data-sb-feedback="email:required">É necessário inserir um e-mail.</div>
+								<div class="invalid-feedback" data-sb-feedback="email:required">É necessário inserir um e-mail válido.</div>
 								<div class="invalid-feedback" data-sb-feedback="email:email">E-mail não válido.</div>
 							</div>
 							<div class="mb-3">
@@ -131,12 +131,42 @@
 							<div class="d-grid">
 								<button class="btn btn-success btn-lg enable" id="submitButton" type="submit">Enviar</button>
 							</div>
-						</form>						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+						</form>	
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="contact-widget-wrapper mt-">
+                        <div class="main-title">
+                            <h2 style="color: #913921;" >Estamos sempre atentos<br> para ajudá-lo.</h2>
+                            <p style="color: #939393;">Contate-nos para poder tirar dúvidas e esclarecimentos. <br>
+								A nossa equipe está disponível as 24hs para atendê-lo.</p>
+                        </div>
+                        <div class="main-title">
+                            <h2 style="color: #913921;">Secretarias de Turismos</h2>
+                            <p style="color: #913921;">SENATUR Turista Roga Alto Paraná </p>
+								<p style="color: #939393;">+595(61) 511 626</p>
+								<br>
+							<p style="color: #913921;">Secretaria Municipal de Turismo de Foz do Iguaçu </p>
+								<p style="color: #939393;">+55(45)2105-8100 </p>
+								<p style="color: #939393;">contato@destino.foz.br</p>
+								<br>
+							<p style="color: #913921;">Ente Municipal de Turismo ITUREM </p>
+								<p style="color: #939393;">+54 3757 423951 / 422938  </p>
+								<br>
+                        
+                        <div class="contact-widget-block">
+                            <h3 class="title" style="color: #913921;">Email para contato</h3>
+                            <p style="color: #939393;">info@mail.com</p>
+                            <p style="color: #939393;">support@mail.com</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	
 
 	<footer class="footer-area">
 		<div class="widget-wrapper ">
@@ -161,14 +191,14 @@
 						</div>
 					</div>
 
-					<div class="col-xl-4 col-md-4 order-md-2 order-xl-1 col-sm-6 d-flex-right text-center ">
+					<div class="col-xl-4 col-md-4 order-md-2 order-xl-1 col-sm-6 d-flex-right text-right ">
 						<div class="footer-widget">
 							<h4>Acesso rápido</h4>
 							<ul class="link">
-								<li><a href="/index.html">O JOGO</a></li>
-								<li><a href="/assets/html/triplice.html">TRÍPLICE FRONTEIRA</a></li>
-								<li><a href="/assets/html/personagens.html">PERSONAGENS</a></li>
-								<li><a href="/assets/html/contato.html">CONTATO</a></li>
+								<li><a href="javascript:void(0)">O Jogo</a></li>
+								<li><a href="javascript:void(0)">Tríplice Fronteira</a></li>
+								<li><a href="javascript:void(0)">Personagens</a></li>
+								<li><a href="javascript:void(0)">Contato</a></li>
 							</ul>
 						</div>
 					</div>
@@ -219,91 +249,7 @@
 	<!--====== Main js ======-->
 	<script src="/assets/js/main.js"></script>
 
-	<script>
-		function validateForm() {
-			var name = document.getElementById('name').value;
-			var email = document.getElementById('email').value;
-			var phone = document.getElementById('phone').value;
-			var message = document.getElementById('message').value;
 	
-			if (name.trim() === '' || email.trim() === '' || phone.trim() === '' || message.trim() === '') {
-				alert('Por favor, preencha todos os campos.');
-				return false; // Impede o envio do formulário
-			}
-	
-			return true; // Permite o envio do formulário
-		}
-	</script>
-
-	<script>
-
-		//========= glightbox
-		const myGallery = GLightbox({
-			'href': 'assets/video/Free App Landing Page Template - AppLand.mp4',
-			'type': 'video',
-			'source': 'youtube', //vimeo, youtube or local
-			'width': 900,
-			'autoplayVideos': true,
-		});
-
-		//======== tiny slider for feature-product-carousel
-		tns({
-			slideBy: 'page',
-			autoplay: false,
-			mouseDrag: true,
-			gutter: 20,
-			nav: false,
-			controls: true,
-			controlsPosition: 'bottom',
-			controlsText: [
-				'<span class="prev"><i class="lni lni-chevron-left"></i></span>', 
-				'<span class="next"><i class="lni lni-chevron-right"></i></span>'
-			],
-			container: ".feature-product-carousel",
-			items: 1,
-			center: false,
-			autoplayTimeout: 5000,
-			swipeAngle: false,
-			speed: 400,
-			responsive: {
-				768: {
-					items: 2,
-				},
-
-				992: {
-					items: 2,
-				},
-
-				1200: {
-					items: 3,
-				}
-			}
-		});
-
-		//======== tiny slider for testimonial
-		tns({
-			slideBy: 'page',
-			autoplay: false,
-			mouseDrag: true,
-			gutter: 20,
-			nav: true,
-			controls: false,
-			container: ".testimonial-carousel",
-			items: 1,
-			center: false,
-			autoplayTimeout: 5000,
-			swipeAngle: false,
-			speed: 400,
-			responsive: {
-				768: {
-					items: 2,
-				},
-				1200: {
-					items: 3,
-				}
-			}
-		});
-	</script>
 
 </body>
 

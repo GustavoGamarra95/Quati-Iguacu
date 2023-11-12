@@ -76,7 +76,7 @@
 									</li>
 								</ul>
 								<div class="gtranslate_wrapper"></div>
-	                			<script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "es", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "top", "float_switcher_open_direction": "bottom", "flag_style": "3d", "alt_flags": { "pt": "brazil" } }</script>
+	                			<script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "es", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "top", "float_switcher_open_direction": "bottom", "flag_style": "2d", "alt_flags": { "pt": "brazil" } }</script>
 	                			<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 							</div>
 							
@@ -92,22 +92,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="mx-auto col-lg-9 col-xl-9 col-md-10">
-					<div class="text-center hero-content">
-					
-
-						
-						<div class="row align-items-center">
+					<div class="text-left hero-content">
+						<div class="row">
 							<div class="col-lg-7">
 								<div class="subscribe-content section-title">
-									<h1 class="text-white"><font style="vertical-align: inherit;">Junte-se a nossa aventura! pelos restaurantes da Tríplice Fronteira!</font></h1>
-									<p class="text-white"><font style="vertical-align: inherit;">Cadastre-se para receber notificações sobre lançamentos, atualizações e eventos interessantes sobre o jogo.</font></p>
+									<h1 class="text-white wow fadeInUp" data-wow-delay="0.5s"><font style="vertical-align: left;">Junte-se a nossa aventura! da Tríplice Fronteira!</font></h1>
+									<p class="text-white wow fadeInUp" data-wow-delay="0.9s"><font style="vertical-align: inherit;">Cadastre-se para receber notificações sobre lançamentos, atualizações e eventos interessantes sobre o jogo.</font></p>
 								</div>
 							</div>
 							<div class="col-lg-5">
 								<div class="subscribe-form-wrapper">
-									<form action="#" class="subscribe-form">
+									<form action="#" class="subscribe-form wow fadeInUp" data-wow-delay="1s">
 										<a href="/assets/html/participeBeta.html" rel="nofollow" class="main-btn btn-hover" style="color: #fca814;">Participe do beta!</a>
-										
 									</form>
 								</div>
 							</div>
@@ -201,7 +197,6 @@
 								<li><a href="javascript:void(0)">Tríplice Fronteira</a></li>
 								<li><a href="javascript:void(0)">Personagens</a></li>
 								<li><a href="javascript:void(0)">Contato</a></li>
-								<li><a href="javascript:void(0)">Mais</a></li>
 							</ul>
 						</div>
 					</div>
@@ -237,6 +232,9 @@
 
 	<!--====== wow js ======-->
 	<script src="/assets/js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 
 	<!--====== glightbox js ======-->
 	<script src="/assets/js/glightbox.min.js"></script>
@@ -251,75 +249,6 @@
 	<script src="/assets/js/main.js"></script>
 
 	<script>
-
-		//========= glightbox
-		const myGallery = GLightbox({
-			'href': 'assets/video/Free App Landing Page Template - AppLand.mp4',
-			'type': 'video',
-			'source': 'youtube', //vimeo, youtube or local
-			'width': 900,
-			'autoplayVideos': true,
-		});
-
-		//======== tiny slider for feature-product-carousel
-		tns({
-			slideBy: 'page',
-			autoplay: false,
-			mouseDrag: true,
-			gutter: 20,
-			nav: false,
-			controls: true,
-			controlsPosition: 'bottom',
-			controlsText: [
-				'<span class="prev"><i class="lni lni-chevron-left"></i></span>', 
-				'<span class="next"><i class="lni lni-chevron-right"></i></span>'
-			],
-			container: ".feature-product-carousel",
-			items: 1,
-			center: false,
-			autoplayTimeout: 5000,
-			swipeAngle: false,
-			speed: 400,
-			responsive: {
-				768: {
-					items: 2,
-				},
-
-				992: {
-					items: 2,
-				},
-
-				1200: {
-					items: 3,
-				}
-			}
-		});
-
-		//======== tiny slider for testimonial
-		tns({
-			slideBy: 'page',
-			autoplay: false,
-			mouseDrag: true,
-			gutter: 20,
-			nav: true,
-			controls: false,
-			container: ".testimonial-carousel",
-			items: 1,
-			center: false,
-			autoplayTimeout: 5000,
-			swipeAngle: false,
-			speed: 400,
-			responsive: {
-				768: {
-					items: 2,
-				},
-				1200: {
-					items: 3,
-				}
-			}
-		});
-	</script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

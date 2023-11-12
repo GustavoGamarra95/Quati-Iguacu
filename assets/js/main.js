@@ -18,26 +18,24 @@
     Sticky
     ======================================= */
     window.onscroll = function () {
-        var header_navbar = document.getElementById("header_navbar");
-        var sticky = header_navbar.offsetTop;
-        var logo = document.querySelector('.navbar-brand img')
+        var header_navbar = document.getElementById("header_navbar"); // seleciona o elemento com id "header_navbar"
+        var sticky = header_navbar.offsetTop; // pega a posição do elemento em relação ao topo da página
+        var logo = document.querySelector('.navbar-brand img') // seleciona a imagem do logo
 
-        if (window.pageYOffset > sticky) {
-            header_navbar.classList.add("sticky");
-            logo.src = "/Site Antigo/assets/img/logoOficial.png";
+        if (window.pageYOffset > sticky) { // verifica se a posição do scroll é maior que a posição do elemento
+            header_navbar.classList.add("sticky"); // adiciona a classe "sticky" ao elemento
+            logo.src = "/Site Antigo/assets/img/logoOficial.png"; // altera a imagem do logo
         } else {
-            header_navbar.classList.remove("sticky");
-            logo.src = "/Site Antigo/assets/img/logoOficial.png";
+            header_navbar.classList.remove("sticky"); // remove a classe "sticky" do elemento
+            logo.src = "/Site Antigo/assets/img/logoOficial.png"; // altera a imagem do logo
         }
 
-
-
         // show or hide the back-top-top button
-        var backToTo = document.querySelector(".back-to-top");
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            backToTo.style.display = "block";
+        var backToTo = document.querySelector(".back-to-top"); // seleciona o elemento com a classe "back-to-top"
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) { // verifica se a posição do scroll é maior que 50
+            backToTo.style.display = "block"; // exibe o elemento
         } else {
-            backToTo.style.display = "none";
+            backToTo.style.display = "none"; // esconde o elemento
         }
     };
 

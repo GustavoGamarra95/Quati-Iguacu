@@ -12,14 +12,17 @@
 /*===========================
     01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,400;1,200&display=swap');
+</style>
+
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #7C869A;
@@ -35,15 +38,9 @@ img {
   max-width: 100%;
 }
 
-
-
-
 .navbar_toggler {
   justify-self: start;
 }
-
-
-
 
 a:focus,
 input:focus,
@@ -90,7 +87,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #000000;
   margin: 0px;
@@ -1208,7 +1205,7 @@ textarea:focus {
   background-color: #fff;
   box-shadow: 0 5px 40px 0 rgba(10, 10, 25, 0.1);
   border-bottom: 0;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.6s;
 }
 
 .sticky .navbar {
@@ -1230,7 +1227,7 @@ textarea:focus {
 .navbar {
   padding: 0;
   position: relative;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1284,7 +1281,7 @@ textarea:focus {
   display: block;
   margin: 5px 0;
   position: relative;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.1s ease-out 0s;
 }
 
 .navbar-toggler.active .toggler-icon:nth-of-type(1) {
